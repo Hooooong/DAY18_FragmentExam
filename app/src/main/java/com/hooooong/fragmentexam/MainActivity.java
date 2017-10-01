@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.Call
     public void goDetail(String value) {
         if(getResources().getConfiguration().orientation
                 == Configuration.ORIENTATION_PORTRAIT){
-            // 새로모드일 때
+            // 세로모드일 때
             // DetailFragment 를 Setting
             addFragment(value);
         }else{
