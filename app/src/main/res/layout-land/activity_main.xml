@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.hooooong.fragmentexam.MainActivity">
+
+    <!-- Fragment 를 xml에서 호출한다. -->
+    <!-- name 에 Fragment의 .java 파일 경로를 작성한다. -->
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.hooooong.fragmentexam.ListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.hooooong.fragmentexam.DetailFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+</LinearLayout>
